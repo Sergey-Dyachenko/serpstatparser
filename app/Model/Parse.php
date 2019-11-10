@@ -18,6 +18,8 @@ class Parse
 
     public function getPageObject($page_html_text){
             $dom = $this->dom;
+            $dom->recover = true;
+            $dom->strictErrorChecking = false;
             $dom->loadHTML($page_html_text);
             return $dom;
     }

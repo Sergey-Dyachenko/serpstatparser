@@ -15,5 +15,6 @@ interface ParseDataSourceInterface
     public function load();
     public function update();
     public function delete();
+    public function setDomain($domain);
 
 }
