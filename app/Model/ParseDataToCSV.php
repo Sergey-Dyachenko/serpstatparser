@@ -17,10 +17,6 @@ class ParseDataToCSV implements ParseDataSourceInterface {
     private  $url;
     private $domain;
 
-    public function __construct()
-    {
-
-    }
 
     public function setUrl($url)
     {
@@ -81,15 +77,6 @@ class ParseDataToCSV implements ParseDataSourceInterface {
         return  fclose($fp);
     }
 
-//    private function setFileName()
-//    {
-//       $domain = parse_url($this->url, PHP_URL_HOST);
-//        if (preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $domain, $list)) {
-//            return substr($list['domain'], 0,strpos($list['domain'], "."));
-//        }
-//        return false;
-//
-//    }
 
     private function getFilesList()
     {

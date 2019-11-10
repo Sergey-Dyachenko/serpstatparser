@@ -16,12 +16,9 @@ class DataOperations
     private $data;
     private $url;
     private $source;
-
-    public function __construct()
-    {
+    private $domain;
 
 
-    }
 
     public function setSourceType(ParseDataSourceInterface $source)
     {
