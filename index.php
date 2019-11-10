@@ -20,7 +20,7 @@ do {
             $controller->quit();
             break;
         default :
-            $controller->defaultcontroller();
+            $controller->errorHandle();
     }
 
 } while ($command != 'quit');
